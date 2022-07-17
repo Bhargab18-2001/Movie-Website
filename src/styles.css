@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply cursor-pointer tracking-wider hover:shadow-inner transform hover:scale-105 hover:bg-opacity-70;
+}
+
+.badge{
+    @apply absolute top-48 ml-6 p-2 mt-2 text-white uppercase font-bold rounded-full lg:p-0 sm:p-0 md:p-0 sm:text-xs md:text-xs lg:text-xs xl:text-sm sm:font-thin md:font-thin lg:font-thin xl:font-extralight xl:ml-1;
+}
+
+.title{
+    @apply cursor-pointer tracking-wider hover:shadow-inner transform hover:scale-110 hover:bg-opacity-100 ;
+}

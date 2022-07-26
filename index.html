@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <div class="grid grid-cols-4">
+        <div class="col-span-1 p-1 border-b shadow-lg text-center">
+            <img class="bg-black p-2 rounded h-10 inline-block" src="img/Path 1.png" alt="Path 1">
+            <h1 class=" font-extrabold text-2xl sm:text-lg md:text-lg inline-block" id="names">Directory</h1>
+        </div>
+        <div class="col-span-2 border-b shadow-lg"></div>
+        <div class="col-span-1 border-b shadow-lg text-center" id="search-result">
+            <form id="form">
+            <svg class="w-6 h-6 text-black inline-block btn" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+            <input class="w-32 sm:w-0 md:w-0 inline-block mt-2 rounded btn search sm:invisible md:invisible" type="text" id="search" name="Quick Search" placeholder="Quick Search">
+            </form>
+        </div>
+        </div>
+
+        <div class="grid grid-cols-4">
+        <div class="col-span-1 border shadow-lg font-bold p-4 text-center bg-blue-100">
+        <ul class="space-y-9 sm:invisible md:invisible">
+            <li>
+                <a href="#">
+                    <span class="border rounded hover:bg-white p-2">Search Results</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="border rounded hover:bg-white p-2">All Team</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="border rounded hover:bg-white p-2">Core</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="border rounded hover:bg-white p-2">Developers</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="border rounded hover:bg-white p-2">Designers</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="border rounded hover:bg-white p-2">Mentors</span>
+                </a>
+            </li>
+        </ul>
+        <div class="mt-60">
+        <div class="text-white p-2 bg-black rounded lg:w-32 lg:ml-4 xl:w-40 xl:ml-1 2xl:w-48 2xl:ml-12 md:w-28 md:ml-3 w-52 ml-20 btn sm:invisible md:invisible 6xl:ml-44" id="button">+ Contact</div>
+        </div>
+        </div>
+
+        <main class=" grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 md:mr-8 lg:mr-8 xl:mr-8 2xl:mr-8 col-span-3 movie" id="main">
+            <div class="w-80 shadow-lg hover:shadow-2xl btn sm:w-16 lg:w-36 xl:w-40 2xl:w-72 movie">
+                <img src="img/JL.png" alt="Image" class="w-80 h-72">
+                <span class="badge title movie-info" id="movie-name">Zack Snyder's <br> Justice League</span>
+            </div>
+            <div class="w-80 shadow-lg hover:shadow-2xl btn sm:w-16 md:w-24 lg:w-36 xl:w-40 2xl:w-72 ">
+                <img src="img/WW.png" alt="Image" class="w-80 h-72">
+                <span class="badge title movie-info" id="movie-name">Wonder Woman <br> 1984</span>
+            </div>
+            <div class="w-80 shadow-lg hover:shadow-2xl btn sm:w-16 md:w-24 lg:w-36 xl:w-40 2xl:w-72">
+                <img src="img/TC.png" alt="Image" class="w-80 h-72">
+                <span class="badge title movie-info" id="movie-name">The Courier</span>
+            </div>
+            <div class="w-80 shadow-lg hover:shadow-2xl btn sm:w-16 md:w-24 lg:w-36 xl:w-40 2xl:w-72">
+                <img src="img/TF.png" alt="Image" class="w-80 h-72">
+                <span class="badge title movie-info" id="movie-name">Thunder Force</span>
+            </div>
+            <div class="w-80 shadow-lg hover:shadow-2xl btn sm:w-16 md:w-24 lg:w-36 xl:w-40 2xl:w-72">
+                <img src="img/WW.png" alt="Image" class="w-80 h-72">
+                <span class="badge title movie-info" id="movie-name">Wonder Woman <br> 1984</span>
+            </div>
+            <div class="w-80 shadow-lg hover:shadow-2xl btn sm:w-16 md:w-24 lg:w-36 xl:w-40 2xl:w-72">
+                <img src="img/MK.png" alt="Image" class="w-80 h-72">
+                <span class="badge title movie-info" id="movie-name">Mortal Kombat</span>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
